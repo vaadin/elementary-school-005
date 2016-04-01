@@ -1,6 +1,6 @@
 # Vaadin Elementary School 005
 
-Source code for [Vaadin Elementary School 002](https://www.youtube.com/watch?v=FUUbRxgthYI), showing you how to use Polymer data binding and iron-ajax as a data source for `<vaadin-grid>`.
+Source code for Vaadin Elementary School 005, showing you how to use Polymer data binding and iron-ajax as a data source for `<vaadin-grid>`.
 
 ## Running
 
