@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Vaadin Elementary School</title>
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      }
+
+    </style>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/vaadin-grid/vaadin-grid.html">
+    <link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
+  </head>
+
+  <body>
+    <h1>Vaadin Elementary School Signups</h1>
+    <template is="dom-bind">
+      <iron-ajax auto url="signups.json" handle-as="json" last-response="{{signups}}"></iron-ajax>
+      <vaadin-grid items="{{signups}}">
+        <table>
+          <colgroup>
+            <col name="user.name.first"/>
+            <col name="user.name.last"/>
+            <col name="user.email"/>
+            <col name="user.phone"/>
+          </colgroup>
+        </table>
+      </vaadin-grid>
+    </template>
+  </body>
+
+</html>
